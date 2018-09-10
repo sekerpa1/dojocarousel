@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        dojoConfig = {
+            parseOnLoad: true,
+            async: true
+        };
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/dojo.js"></script>
+</head>
+<body>
+    <div data-dojo-type="dojox.image.SlideShow" id="slideshow1"
+         data-dojo-props='slideshowInterval:3, imageWidth:600, imageHeight:300'></div>
+
+    <script>
+        require([
+            'dojo/dom',
+            'dojo/dom-construct'
+        ], function (dom, domConstruct) {
+
+            //var greetingNode = dom.byId('greeting');
+            //domConstruct.place('<i> Dojo!</i>', greetingNode);
+        });
+    </script>
+    <!--,images:[{"src":"/images/slideshow/1.jpg","label":"Cherry"},
+    {"src":"/images/slideshow/2.jpg","label":"Apple"},
+    {"src":"/images/slideshow/3.jpg","label":"Banana"},
+    {"src":"/images/slideshow/4.jpg","label":"Strawberry"}]-->
+</body>
+</html>
